@@ -1,0 +1,326 @@
+/*service_nav_bar start*/
+.service_nav_bar > ul > li:nth-child(3) > a {
+  color: #fff;
+}
+
+.service_nav_bar > ul > li:nth-child(2) > a {
+  color: #777;
+  transition: all 0.2s;
+}
+
+.service_nav_bar > ul > li:nth-child(2) > a:hover {
+  color: #fff;
+}
+
+/*machine_greeting_box start*/
+.machine_greeting_box {
+  margin-top: 10px;
+  padding: 60px 0;
+  margin: auto;
+  width: 100%;
+  background-color: #eee;
+}
+
+.machine_greeting {
+  font-size: 1.25rem; /*20px*/
+  color: #777;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ness_btn {
+  margin: auto;
+  max-width: 220px;
+  height: 55px;
+  background-color: #faa500;
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 55px;
+  transition: all 0.2s;
+}
+
+.ness_btn:hover {
+  background-color: #f09000;
+}
+
+.ness_btn > a {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.25rem; /*20px*/
+}
+
+.machine_benefits_wrap {
+  max-width: 593px;
+  margin: auto;
+  padding-top: 60px;
+}
+
+.machine_benefits_wrap > h2 {
+  text-align: center;
+  font-weight: bold;
+  color: #777;
+  font-size: 1.25rem; /*20px*/
+}
+
+.machine_benefits {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #aaa;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.machine_benefits > div > h3 {
+  font-weight: bold;
+  color: #777;
+  font-size: 1.125rem; /*18px*/
+  margin-bottom: 5px;
+}
+
+.machine_benefits > div > p {
+  color: #aaa;
+  font-size: 1rem;
+}
+
+/*machine_warranty start*/
+.machine_warranty_wrap {
+  width: 100%;
+  margin: 120px 0 180px 0;
+}
+
+.machine_warranty_wrap > h4 {
+  text-align: center;
+  font-size: 1.25rem; /*20px*/
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.machine_warranty {
+  border: 1px solid #eee;
+  padding: 50px 128px;
+}
+
+.stick1::before,
+.stick2::before {
+  content: "";
+  display: block;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.stick1::before {
+  width: 48%;
+  background-color: #eee;
+}
+
+.stick2::before {
+  width: 84%;
+  background-color: #faa500;
+}
+
+.stick1,
+.stick2 {
+  display: flex;
+  font-size: 1.125rem; /*18px*/
+  line-height: 30px;
+}
+
+.stick2 {
+  margin-top: 20px;
+}
+
+.stick_txt {
+  display: flex;
+  font-size: 1.125rem; /*18px*/
+  margin: 30px 0;
+}
+
+.stick_txt_box1 {
+  margin-right: 30px;
+  line-height: 30px;
+}
+
+.stick_txt_box1::before,
+.stick_txt_box2::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  margin-right: 7px;
+  width: 18px;
+  height: 18px;
+}
+
+.stick_txt_box1::before {
+  background-color: #eee;
+}
+
+.stick_txt_box2::before {
+  background-color: #faa500;
+}
+
+.machine_warranty > p {
+  font-size: 1.125rem; /*18px*/
+}
+
+.ness_btn2 {
+  max-width: 306px;
+  margin-top: 30px;
+}
+
+.welcome_coupon_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome_coupon_wrap > div {
+  width: 45%;
+}
+
+.welcome_coupon_wrap > div:first-child > img {
+  width: 100%;
+}
+
+.welcome_coupon_wrap > div:first-child > p {
+  font-size: 0.75rem; /*12px*/
+}
+
+.welcome_coupon_wrap > div:last-child > p {
+  font-size: 1.125rem; /*18px*/
+  margin-bottom: 30px;
+}
+
+.welcome_coupon_wrap > div:last-child > ul > li {
+  font-size: 0.9375rem; /*15px*/
+  margin-bottom: 5px;
+}
+
+.welcome_coupon_wrap > div:last-child > ul > li::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/bul-arrow01.png);
+  width: 11px;
+  height: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-right: 10px;
+}
+
+.star_btn {
+  background-color: #2b845c;
+  max-width: 242px;
+  margin-top: 50px;
+}
+
+.star_btn:hover {
+  background-color: #04643c;
+}
+
+.coupon_warning > h5 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 0.875rem /*14px*/;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.coupon_warning > ul {
+  list-style: circle;
+  list-style-position: inside;
+  font-size: 0.75rem; /*12px*/
+}
+
+@media only screen and (max-width: 1024px) {
+  .machine_greeting_box {
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  .machine_warranty {
+    padding: 35px 25px;
+    box-sizing: border-box;
+  }
+  .machine_greeting {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .machine_warranty_wrap > h4 {
+    margin-bottom: 20px;
+  }
+  .machine_benefits_wrap {
+    padding-top: 40px;
+  }
+  .machine_benefits {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+  .machine_benefits_wrap > h2 {
+    font-size: 1.125rem;
+  }
+  .machine_benefits > div > h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  .machine_benefits > div > p {
+    font-size: 0.937rem; /*15px*/
+  }
+  .stick1::before,
+  .stick2::before {
+    height: 20px;
+    margin-right: 10px;
+  }
+  .stick1,
+  .stick2 {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  .stick2 {
+    margin-top: 15px;
+  }
+  .stick_txt {
+    flex-direction: column;
+    font-size: 0.937rem; /*15px*/
+    margin: 25px 0;
+  }
+  .machine_warranty > p {
+    font-size: 0.937rem; /*15px*/
+  }
+  .ness_btn {
+    transform: scale(0.8);
+  }
+  .ness_btn2 {
+    margin-top: 25px;
+  }
+  .welcome_coupon_wrap {
+    flex-direction: column;
+  }
+  .welcome_coupon_wrap > div {
+    width: 100%;
+  }
+  .welcome_coupon_wrap > div:first-child > img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  .welcome_coupon_wrap > div:first-child > p {
+    text-align: center;
+    font-size: 0.1rem;
+    margin-bottom: 30px;
+  }
+  .welcome_coupon_wrap > div:last-child > p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .star_btn {
+    margin-top: 20px;
+  }
+}
+
+/*js event css*/
+.up-on-scroll {
+  transition: transform 0.7s, opacity 1s;
+}

@@ -1,0 +1,328 @@
+main {
+  box-sizing: border-box;
+  font-size: 0.875rem; /*14px*/
+}
+
+/****** service_title *****/
+
+.service_title {
+  /*header 값 90px*/
+  padding-top: 90px;
+  background-image: url(../img/service_bg.jpg);
+  min-height: 563px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service_title > h1 {
+  color: #fff;
+  font-size: 2.5rem; /*40px*/
+  font-weight: bold;
+}
+
+/****** service_nav_bar *****/
+
+.service_nav_bar {
+  width: 100%;
+  min-height: 90px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service_nav_bar > ul {
+  display: flex;
+  min-width: 930px;
+  justify-content: space-between;
+}
+
+.service_nav_bar > ul > li > a {
+  font-size: 1.25rem; /*20px*/
+  font-weight: bold;
+}
+
+.service_nav_bar > ul > li:first-child > a {
+  color: #fff;
+}
+
+.service_nav_bar > ul > li > a {
+  color: #777;
+  transition: all 0.2s;
+}
+
+.service_nav_bar > ul > li > a:hover {
+  color: #fff;
+}
+
+/****** service_support_wrap *****/
+.service_support_wrap {
+  max-width: 1030px;
+  margin: auto;
+  padding: 30px 15px 100px;
+  box-sizing: border-box;
+}
+
+.service_support_wrap > ul {
+  display: flex;
+}
+
+.service_support_wrap > ul > li {
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 0;
+}
+
+.service_support_wrap > ul > li:first-child {
+  border: 1px solid #777;
+  border-bottom: none;
+}
+
+.service_support_wrap > ul > li:first-child > a {
+  color: #333;
+}
+
+.service_support_wrap > ul > li:last-child {
+  border-top: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #777;
+  background-color: #eee;
+  transition: all 0.2s;
+}
+
+.service_support_wrap > ul > li:last-child > a {
+  color: #aaa;
+  transition: all 0.2s;
+}
+
+.service_support_wrap > ul > li:last-child:hover {
+  background: none;
+  border: 1px solid #777;
+  border-left: none;
+}
+
+.service_support_wrap > ul > li:last-child:hover a {
+  color: #333;
+}
+
+/****** fix_wrap *****/
+.fix_wrap {
+  padding: 50px 0;
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.fix_left {
+  margin: 0 20px;
+}
+
+.fix_img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fix_img > img {
+  width: 37px;
+}
+
+.fix_info > h3 {
+  font-weight: bold;
+}
+
+.fix_info > p {
+  margin-top: 10px;
+}
+
+.fix_btn_wrap {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.fix_btn {
+  width: 238px;
+  height: 55px;
+  border: 1px solid #aaa;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.fix_btn a {
+  padding: 15px;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 50px;
+  transition: all 0.5s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.fix_btn_box {
+  width: 238px;
+  height: 55px;
+  border: 0px solid #faa500;
+  position: absolute;
+  transition: all 0.5s ease;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.fix_btn > a::after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+  vertical-align: middle;
+  background-image: url(../img/arrow_right.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fix_btn:hover {
+  border: 1px solid #faa500;
+}
+
+.fix_btn:hover .fix_btn_box {
+  border: 70px solid #faa500;
+}
+
+.fix_btn:hover a {
+  color: #fff;
+}
+
+/****** menual *****/
+.menual_img {
+  padding-left: 5px;
+}
+
+.warranty {
+  margin-bottom: 30px;
+}
+
+.warranty > h4 {
+  margin: 50px 0 30px 0;
+  font-weight: bold;
+}
+
+.warranty > h5 {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-position: under;
+  margin-bottom: 3px;
+}
+
+.warranty > ul {
+  list-style: circle;
+  list-style-position: inside;
+}
+
+.warranty strong {
+  font-weight: bold;
+}
+
+.warranty > ol {
+  font-size: 0.75rem; /*12px*/
+  list-style-type: upper-latin;
+  list-style-position: inside;
+}
+
+.warranty_small_list {
+  font-size: 0.75rem; /*12px*/
+}
+
+.warranty_table1,
+.warranty_table2 {
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #eee;
+}
+
+.warranty_table1 th,
+td {
+  width: 33.33%;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.not_free {
+  margin-top: 20px;
+}
+
+.not_free_td {
+  width: 5%;
+  text-align: center;
+}
+
+.warranty_table2 th,
+td {
+  padding: 20px;
+  vertical-align: middle;
+}
+
+/*js event css*/
+.up-on-scroll {
+  transition: transform 0.7s, opacity 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .service_title {
+    min-height: 360px;
+  }
+  .service_nav_bar {
+    min-height: 40px;
+  }
+  .service_nav_bar > ul > li > a {
+    font-size: 0.875rem;
+  }
+  .service_nav_bar > ul {
+    min-width: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service_title {
+    min-height: 280px;
+  }
+  .service_title > h1 {
+    font-size: 1.43rem;
+  }
+  .service_nav_bar > ul {
+    min-width: 400px;
+  }
+  .service_support_wrap {
+    padding: 30px 15px 100px 15px;
+  }
+  .fix_btn_wrap {
+    align-items: center;
+    flex-direction: column;
+  }
+  .fix_btn:last-child {
+    margin-top: 10px;
+  }
+  .fix_left{
+    display: none;
+  }
+}
